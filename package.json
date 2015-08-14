@@ -1,0 +1,21 @@
+{
+  "title": "include-media-make-grid",
+  "name": "include-media-make-grid",
+  "version": "1.0.0",
+  "description": "An include-media plugin for generating grid classes based on the BEMIT naming convention",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eduardoboucas/include-media-make-grid.git"
+  },
+  "main": "_include-media-make-grid.scss",
+  "author": {
+    "name": "Eduardo Boucas",
+    "email": "mail@eduardoboucas.com"
+  },
+  "bugs": {
+    "url": "https://github.com/eduardoboucas/include-media-make-grid/issues"
+  },
+  "homepage": "https://github.com/eduardoboucas/include-media-make-grid",
+  "license": "MIT",
+  "devDependencies": {}
+}
