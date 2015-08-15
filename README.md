@@ -1,6 +1,6 @@
 <a href="http://include-media.com">!['At' sign](http://include-media.com/assets/images/logo.png)</a>
 
-# include-media — Grid plugin
+# include-media — Columns plugin
 
 > Get **include-media** [here](https://github.com/eduardoboucas/include-media).
 
@@ -12,7 +12,7 @@ This plugin generates classes for a grid system using [Harry Roberts' BEMIT nami
 
 ```scss
 @import 'include-media';
-@import 'include-media-make-grid';
+@import 'include-media-columns';
 
 $breakpoints: (
     'medium': 768px,
@@ -20,44 +20,44 @@ $breakpoints: (
 );
 
 // Dividing the layout in halves and thirds
-@include im-grid(2, 3);
+@include im-columns(2, 3);
 ```
 
 *Generates:*
 
 ```css
 @media (min-width: 768px) {
-  .col-1-2\@medium {
+  .col--1-2\@medium {
     width: 50%;
   }
-  .col-2-2\@medium {
+  .col--2-2\@medium {
     width: 100%;
   }
-  .col-1-3\@medium {
+  .col--1-3\@medium {
     width: 33.33333%;
   }
-  .col-2-3\@medium {
+  .col--2-3\@medium {
     width: 66.66667%;
   }
-  .col-3-3\@medium {
+  .col--3-3\@medium {
     width: 100%;
   }
 }
 
 @media (min-width: 1024px) {
-  .col-1-2\@large {
+  .col--1-2\@large {
     width: 50%;
   }
-  .col-2-2\@large {
+  .col--2-2\@large {
     width: 100%;
   }
-  .col-1-3\@large {
+  .col--1-3\@large {
     width: 33.33333%;
   }
-  .col-2-3\@large {
+  .col--2-3\@large {
     width: 66.66667%;
   }
-  .col-3-3\@large {
+  .col--3-3\@large {
     width: 100%;
   }
 }
@@ -68,9 +68,13 @@ $breakpoints: (
 To create a grid where four elements in a row are displayed on the *large* view, two elements on the *medium* view and just one element on the *small* view, one can simply define the items as follows:
 
 ```scss
-@include im-grid(1, 2, 4);
+@include im-columns(1, 2, 4);
+
+.col {
+    float: left;
+}
 ```
 
 ```html
-<article class="col-1-4@large col-1-2@medium col-1-1@small"></article>
+<article class="col col--1-4@large col--1-2@medium col--1-1@small"></article>
 ```

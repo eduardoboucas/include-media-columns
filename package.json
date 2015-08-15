@@ -1,21 +1,21 @@
 {
-  "title": "include-media-grid",
-  "name": "include-media-grid",
+  "title": "include-media-columns",
+  "name": "include-media-columns",
   "version": "1.0.0",
   "description": "An include-media plugin for generating grid classes based on the BEMIT naming convention",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eduardoboucas/include-media-grid.git"
+    "url": "https://github.com/eduardoboucas/include-media-columns.git"
   },
-  "main": "_include-media-grid.scss",
+  "main": "_include-media-columns.scss",
   "author": {
     "name": "Eduardo Boucas",
     "email": "mail@eduardoboucas.com"
   },
   "bugs": {
-    "url": "https://github.com/eduardoboucas/include-media-grid/issues"
+    "url": "https://github.com/eduardoboucas/include-media-columns/issues"
   },
-  "homepage": "https://github.com/eduardoboucas/include-media-grid",
+  "homepage": "https://github.com/eduardoboucas/include-media-columns",
   "license": "MIT",
   "devDependencies": {}
 }

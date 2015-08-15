@@ -1,12 +1,12 @@
 {
-  "name": "include-media-grid",
+  "name": "include-media-columns",
   "version": "1.0.0",
-  "homepage": "https://github.com/eduardoboucas/include-media-grid",
+  "homepage": "https://github.com/eduardoboucas/include-media-columns",
   "authors": [
     "Eduardo Boucas <mail@eduardoboucas.com>"
   ],
   "description": "An include-media plugin for generating grid classes based on the BEMIT naming convention",
-  "main": "_include-media-grid.scss",
+  "main": "_include-media-columns.scss",
   "keywords": [
     "breakpoint",
     "breakpoints",
