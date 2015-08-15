@@ -19,7 +19,7 @@ $breakpoints: (
     'large': 1024px
 );
 
-// Dividing the layout in halfs and thirds
+// Dividing the layout in halves and thirds
 @include im-grid(2, 3);
 ```
 
