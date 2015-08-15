@@ -65,8 +65,8 @@ $breakpoints: (
 
 ### Installation
 
-- **Manually:** Download [this file](https://raw.githubusercontent.com/eduardoboucas/include-media-grid/master/_include-media-grid.scss) and import it into your Sass project
-- **Bower:** Run `bower install include-media-grid`
+- **Manually:** Download [this file](https://raw.githubusercontent.com/eduardoboucas/include-media-columns/master/_include-media-columns.scss) and import it into your Sass project
+- **Bower:** Run `bower install include-media-columns`
 
 
 ### Usage examples
