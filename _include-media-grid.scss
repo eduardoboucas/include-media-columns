@@ -13,10 +13,6 @@
 ///  .col-2-3@phone (...)
 ///
 @mixin im-grid($columns...) {
-  [class*="col-"] {
-    float: left;
-  }
-
   @each $breakpoint in $breakpoints {
     $breakpoint-name: nth($breakpoint, 1);
 
