@@ -1,14 +1,14 @@
 <a href="http://include-media.com">!['At' sign](http://include-media.com/assets/images/logo.png)</a>
 
-# include-media
+# include-media — Make grid plugin
 
-## Make grid plugin
+> Get **include-media** [here](https://github.com/eduardoboucas/include-media).
 
 ### Introduction
 
-Harry Roberts [coined the term BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) to describe a variation of the BEM class naming convention that includes information about the state of an element at a certain breakpoint.
+This plugin generates classes for a grid system using [Harry Roberts' BEMIT naming convention](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/), based on a number of subdivisions specified by the user, and taking into account all the breakpoints defined by **include-media**.
 
-This plugin generates classes for a grid system, based on a number of subdivisions specified by the user, and taking into account all the breakpoints defined by **include-media**.
+*Example:*
 
 ```scss
 @import 'include-media';
@@ -23,7 +23,7 @@ $breakpoints: (
 @include im-grid(2, 3);
 ```
 
-Generates:
+*Generates:*
 
 ```css
 @media (min-width: 768px) {
