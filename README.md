@@ -63,6 +63,12 @@ $breakpoints: (
 }
 ```
 
+### Installation
+
+- **Manually:** Download [this file](https://raw.githubusercontent.com/eduardoboucas/include-media-grid/master/_include-media-grid.scss) and import it into your Sass project
+- **Bower:** Run `bower install include-media-grid`
+
+
 ### Usage examples
 
 To create a grid where four elements in a row are displayed on the *large* view, two elements on the *medium* view and just one element on the *small* view, one can simply define the items as follows:
