@@ -1,6 +1,6 @@
 <a href="http://include-media.com">!['At' sign](http://include-media.com/assets/images/logo.png)</a>
 
-# include-media — Make grid plugin
+# include-media — Grid plugin
 
 > Get **include-media** [here](https://github.com/eduardoboucas/include-media).
 
