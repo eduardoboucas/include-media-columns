@@ -3,24 +3,24 @@
 /// named with the convention `.col--x-y@breakpoint`, where
 /// `x` is a subdivision of `y`.
 ///
-/// @param {List}   $columns  - Grid divisions
+/// @link http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/ Taking the BEM naming convention a step further
+///
+/// @param {Arglist}   $columns  - Grid divisions
 ///
 /// @example scss - Dividing the grid in thirds and fourths
-///  @include im-make-grid(3, 4);
+///  @include im-columns(3, 4);
 ///
 ///  /* Generates: */
 ///  .col-1-3@phone, .col-1-3@tablet, .col-1-3@deskop
 ///  .col-2-3@phone (...)
 ///
 @mixin im-columns($columns...) {
-  @each $breakpoint in $breakpoints {
-    $breakpoint-name: nth($breakpoint, 1);
-
+  @each $breakpoint-name, $value in $breakpoints {
     @include media('>=' + $breakpoint-name) {
       @each $i in $columns {
         @for $n from 1 through $i {
           .col--#{$n}-#{$i}\@#{$breakpoint-name} {
-            width: ($n/$i) * 100%;
+            width: ($n / $i * 100%);
          }
        }
      }
