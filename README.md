@@ -61,6 +61,26 @@ $breakpoints: (
     width: 100%;
   }
 }
+
+.col--1-2 {
+  width: 50%;
+}
+
+.col--2-2 {
+  width: 100%;
+}
+
+.col--1-3 {
+  width: 33.33333%;
+}
+
+.col--2-3 {
+  width: 66.66667%;
+}
+
+.col--3-3 {
+  width: 100%;
+}
 ```
 
 ### Installation

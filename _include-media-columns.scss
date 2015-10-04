@@ -15,19 +15,25 @@
 ///  .col-2-3@phone (...)
 ///
 @mixin im-columns($columns...) {
+  @each $breakpoint in $breakpoints {
+    $breakpoint-name: nth($breakpoint, 1);
+    
+    @include media(#{'>=' + $breakpoint-name}) {
+      @each $i in $columns {
+        @for $n from 1 through $i {
+          .col--#{$n}-#{$i}\@#{$breakpoint-name} {
+            width: ($n / $i) * 100%;
+          }
+        }
+      }         
+    }
+  }
+  
   @each $i in $columns {
     @for $n from 1 through $i {
       .col--#{$n}-#{$i} {
         width: ($n / $i) * 100%;
       }
-      
-      @each $breakpoint in $breakpoints {
-        $breakpoint-name: nth($breakpoint, 1);
-        
-        .col--#{$n}-#{$i}\@#{$breakpoint-name} {
-          width: ($n / $i) * 100%;
-        }
-      }
     }
-  }
+  }  
 }
