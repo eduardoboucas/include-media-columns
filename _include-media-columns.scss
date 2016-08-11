@@ -14,10 +14,13 @@
 ///  .col-1-3@phone, .col-1-3@tablet, .col-1-3@deskop
 ///  .col-2-3@phone (...)
 ///
+
+$im-columns-class: '.col' !default;
+
 @mixin im-columns($columns...) {
   @each $i in $columns {
     @for $n from 1 through $i {
-      .col--#{$n}-#{$i} {
+      #{$im-columns-class}--#{$n}-#{$i} {
         width: ($n / $i) * 100%;
       }
     }
@@ -29,7 +32,7 @@
     @include media(#{'>=' + $breakpoint-name}) {
       @each $i in $columns {
         @for $n from 1 through $i {
-          .col--#{$n}-#{$i}\@#{$breakpoint-name} {
+          #{$im-columns-class}--#{$n}-#{$i}\@#{$breakpoint-name} {
             width: ($n / $i) * 100%;
           }
         }
